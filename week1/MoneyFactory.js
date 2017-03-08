@@ -1,14 +1,14 @@
-const Dollar = require('./Dollar');
-const Franc = require('./Franc');
+"use strict";
+const Money = require('./Money');
 
 class MoneyFactory {
 
     static dollar(amount) {
-        return new Dollar(amount, 'USD');
+        return new Money(amount, 'USD');
     }
 
     static franc(amount) {
-        return new Franc(amount, 'CHF');
+        return new Money(amount, 'CHF');
     }
 
 }
